@@ -1,0 +1,44 @@
+[
+{
+"stopid":"1",
+"name":"tontboer",
+"content":"Missed the bus must wait 30s mins for the next!",
+"time":"16/03/2018 12:11:34"
+}, 
+{ 
+"stopid":"298",
+"name":"helio",
+"content":"UTA is good!",
+"time":"15/03/2018 18:10:04"
+}, 
+{ 
+"stopid":"5611",
+"name":"lili",
+"content":"I missed bus again!!",
+"time":"16/02/2018 12:11:34"
+},
+{ 
+"stopid":"5612",
+"name":"lucy",
+"content":"Bala BAla bala bala balba!!",
+"time":"16/02/2018 12:11:34"
+},
+{ 
+"stopid":"5613",
+"name":"Jim",
+"content":"Wow Wow wow wow!",
+"time":"16/02/2018 12:11:34"
+},
+{ 
+"stopid":"100",
+"name":"Kevin",
+"content":"Fxxk!",
+"time":"16/03/2018 12:11:34"
+},
+{ 
+"stopid":"2",
+"name":"20Kevin",
+"content":"It sucks!",
+"time":"26/03/2018 12:11:34"
+}
+] 

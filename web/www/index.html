@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-control" content="no-cache">
+
+    <link rel="stylesheet" type="text/css" href=".\\style\\pulgins.css" media="screen" >
+
+    <script type="text/javascript" src=".\\Chart.js"></script>
+    <script type="text/javascript" src=".\\WATT.js"></script>
+    <script type="text/javascript" src=".\\stops.js"></script>
+    <script type="text/javascript" src=".\\js\\jquery.js"></script>
+    <script type="text/javascript" src=".\\markerclustererplus\\src\\markerclusterer.js"></script>
+    <script type="text/javascript" src=".\\js\\update.js"></script>>
+
+    <title>WATT</title>
+
+</head>
+<body onkeydown="checkEnter()">
+
+<div id = "main" align="center">
+    <h2>WATT Demonstration</h2>
+    <table>
+        <tr>
+            <td>City:</td>
+            <td>
+                <select id="city" onchange="cc()">
+                    <option value ="slc">Salt Lake City, UT</option>
+                    <option value ="portland">Portland, OR</option>
+                </select>
+            </td>
+            <td>Stop Number：</td>
+            <td><input type=text size=10 maxlength=10 id="stop_no" name="stop_no"/></td>
+            <td><span id="stp_range">&nbsp;</span></td>
+            <td>&nbsp;</td>
+            <td><input type=button id="submit" value="Calculate" onclick="WattCal()"/></td>
+            <td>&nbsp;</td>
+            <td><span id="Msg">&nbsp;</span></td>
+            <td><span id="message">&nbsp;</span></td>
+        </tr>
+    </table>
+
+    <!-- canvas -->
+    <hr id="watthr" style="width: 80%;">
+    <div id="wattcanvas" style="width: 80%;display: none;"></div>
+
+    <hr id="maphr" style="width: 80%;display: none;">
+
+    <div id="vis" width = "80%">
+        <div id="map" style="display: none"></div>
+        <div id="tweets">
+            <!--<blockquote class="twitter-tweet" data-lang="en">-->
+            <!--<a href="https://twitter.com/jack/status/20"></a>-->
+            <!--</blockquote>-->
+        </div>
+    </div>
+
+
+
+    <hr id="tazhr" style="width: 80%;display: none;">
+    <!--<div id="taz" style="display: none;">-->
+        <!--<iframe width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"-->
+                <!--title="slc_awatt" src="https://arcg.is/1z8jPb">-->
+        <!--</iframe>-->
+    <!--</div>-->
+
+    <div id="slc_taz" style="display: none;">
+        <H2>TAZs' WATT at Salt Lake City</H2>
+        <iframe width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                title="SLC WATT" src="http://www.arcgis.com/apps/Embed/index.html?webmap=d0948e91dc0c499780afc3d4be50ba59&extent=-112.9365,39.5968,-109.1906,41.8937&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&disable_scroll=false&theme=light">
+        </iframe>
+    </div>
+
+    <div id="portland_taz" style="display: none;">
+        <H2>TAZs' WATT at Portland</H2>
+        <iframe width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                title="Portland WATT" src="http://www.arcgis.com/apps/Embed/index.html?webmap=1b15860e2bce4f65a3fa98ff3e3f027c&extent=-123.4822,45.1548,-121.7958,45.7885&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&details=true&legend=true&active_panel=details&disable_scroll=false&theme=light">
+        </iframe>
+    </div>
+</div>
+
+<script async src="https://platform.twitter.com/widgets.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDohhMWw-7wd9PV0frus-ljyEwCBC1esk&callback=initMap">
+</script>
+
+
+</body>
+
+</html>

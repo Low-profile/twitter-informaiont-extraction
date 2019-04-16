@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: Garamond, sans-serif;
+	background: #ffffff;
+	text-align: center;
+}
+
+h1 { font-size: 4.0em; }
+p, li { font-size: 1.8em; }
+
+.clear { clear: both; }
+
+#header {
+	background: #ffffff;
+	padding: 15px 0 15px 15px;
+}
+
+#content {
+	padding: 0 0 0 0;
+	}
+	#main-content {
+		margin-left: 230px;
+		max-width: 800px;
+	}
+
+.table{border:solid 1px #add9c0;}
+
+#sidebar {
+	width: 200px;
+	float: left;
+	padding: 0 0 0 15px;
+	}
+	#sidebar ul {
+		list-style: inside;
+	}
+
